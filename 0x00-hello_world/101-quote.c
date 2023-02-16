@@ -11,7 +11,5 @@ int main(void)
     int len = sizeof(message) - 1;  /* exclude the terminating null byte */
 
     if (write(STDERR_FILENO, message, len) != len)
-        return (1);
-
-    return 1;
+        return (1);	
 }
