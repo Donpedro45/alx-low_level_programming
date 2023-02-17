@@ -2,12 +2,14 @@
 /**
  * main - Entry point
  *
+ * Description: 'Program that prints the possible combination of three digits'
+ *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int a = 'a';
+	int a = '0';
 	int b;
 	int c;
 
@@ -25,6 +27,11 @@ int main(void)
 				if (a == '7' && b == '8' && c == '9')
 				{
 					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
 				}
 				c++;
 			}
